@@ -1,0 +1,12 @@
+
+
+.name-editor{
+    display: flex;
+    
+    gap: 10px;
+    align-items: center;
+}
+
+.name-editor label{
+    color: var(--white);
+}

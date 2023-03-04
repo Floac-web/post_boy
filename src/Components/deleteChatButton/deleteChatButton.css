@@ -1,0 +1,17 @@
+
+
+.delete-Chat-Btn{
+    width: 30px;
+    height: 30px;
+    
+}
+
+.delete-Chat-Btn svg{
+    fill: var(--white07);
+
+    transition: .1s;
+}
+
+.delete-Chat-Btn:hover svg{
+    fill:  var(--conifer);
+}

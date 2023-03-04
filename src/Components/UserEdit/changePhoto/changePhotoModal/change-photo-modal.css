@@ -1,0 +1,76 @@
+
+
+
+.add-photo-modal{
+    visibility: hidden;
+    opacity: 0;
+    transition: .1s;
+}
+
+.add-photo-modal-active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.add-photo-modal__window{
+    position: absolute;
+    z-index: 1000;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-color: var(--white);
+    padding-bottom: 10px;
+
+    transition: .1s;
+}
+
+.add-photo-modal__title{
+    user-select: none;
+    color: var(--black);
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 0px 10px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.add-photo-modal__preview{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+.add-photo-modal__avatar{
+    user-select: none;
+    width: 290px;
+    height: 290px;
+    overflow: hidden;
+}
+
+.add-photo-modal__error-message{
+    color: var(--red);
+    user-select: none;
+}
+
+.add-photo-modal__save-btn{
+    padding: 8px 10px 7px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--white);
+    background-color: var(--conifer);
+
+    transition: .1s;
+}
+
+.add-photo-modal__save-btn:hover{
+    background-color: var(--conifer09);
+}

@@ -1,0 +1,92 @@
+.search{
+    width: 75%;
+    max-width: 360px;
+    position: relative;
+}
+
+.search__input input{
+    padding: 10px 42px;
+    background-color: var(--middle-shark);
+    color: var(--white);
+}
+
+.search__user-list{
+    padding: 10px 0px;
+    top: 45px;
+    left: -15%;
+    position: absolute;
+    z-index: 10000;
+    background-color: var(--middle-shark);
+    width: 130%;
+    max-width: 500px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.searched-user{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+
+    border-bottom: 1px solid var(--white01);
+    transition: .1s;
+}
+
+.searched-user:last-child{
+    border: none;
+}
+
+.searched-user:hover{
+    background-color: var(--charade);
+}
+
+.searched-user__img{
+    width: 40px;
+    height: 40px;
+}
+
+.searched-user__img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.searched-user__description{
+    font-family: 'Roboto', sans-serif;
+}
+
+.markUserMail{
+    background-color: var(--conifer);
+}
+.searched-user__name{
+    color: var(--white);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.searched-user__email{
+    color: var(--white07);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+
+.search svg{
+    position: absolute;
+    left: 12px;
+    top: 11px;
+    fill: white;
+
+    transition: .1s;
+}
+
+.search input:focus{
+    border-color: var(--conifer);
+}
+
+.search input:focus ~ svg{
+    fill: var(--conifer);
+}

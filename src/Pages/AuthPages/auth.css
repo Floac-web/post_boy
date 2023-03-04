@@ -1,0 +1,154 @@
+
+.auth{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    background-color: var(--main-bg);
+    color: var(--white);
+}
+
+.auth__wrap{
+    width: 90%;
+    max-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.auth__form{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.auth__text{
+    text-align: center;
+    padding: 30px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.auth__title{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.auth__sub-title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--white07);
+}
+
+.auth__input{
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.auth__input:last-child{
+    margin-bottom: 30px;
+}
+
+.auth__input input{
+    outline: 0;
+    width: 100%;
+    padding: 10px 15px 9px;
+}
+
+.auth__input label{
+    position: absolute;
+    user-select: none;
+    left: 15px;
+    top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--black07);
+    transition: .1s;
+}
+
+.auth__input input:focus ~ label,
+.auth__input input:not(:placeholder-shown) ~ label{
+    transform: translate(-10px,-30px);
+    color: var(--white); 
+}
+
+
+
+.errorMessage {
+    font-size: 14px;
+    line-height: 18px;
+    display: inline-block;
+    padding-left: 10px;
+    
+    color: var(--red);
+    font-family: 'Roboto', sans-serif;
+}
+
+.auth__errorMessage{
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+}
+
+.auth__forgot-password{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--conifer);
+    text-decoration: none;
+
+    transition: .1s;
+}
+
+.auth__forgot-password:hover{
+    color: var(--conifer09);
+    text-decoration: underline;
+}
+
+
+
+
+.auth__button{
+    width: 100%;
+    padding: 14px 0px 14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+    text-transform: uppercase;
+
+    background-color: var(--conifer);
+}
+
+.auth__button:disabled{
+    background-color: var(--conifer09);
+}
+
+.auth__button:hover{
+    background-color: var(--conifer09);
+}
+
+.auth__redirect{
+    text-decoration: none;
+    text-align: center;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--white07);
+}
+
+.auth__google{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}

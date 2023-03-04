@@ -1,0 +1,39 @@
+
+
+
+.messages{
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.message{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.message p{
+    word-wrap: break-word;
+    max-width: 48%;
+    padding: 10px;
+}
+
+.messages__own-message{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.messages__alien-message{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.messages__own-message p{
+    background-color: var(--conifer09);
+    border-radius: 10px 10px 1px 10px;
+}
+
+.messages__alien-message p{
+    background-color: var(--shark);
+    border-radius: 10px 10px 10px 1px;
+}

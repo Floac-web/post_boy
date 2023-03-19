@@ -1,3 +1,6 @@
+Написаний на React + JavaScript з використанням SASS
+Без серверне рішення(Firebase)
+
 сайт (Месенджер): https://post-boy.netlify.app/
 реалізовано:
 - авторизація за допомогою Google;
